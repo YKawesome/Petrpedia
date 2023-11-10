@@ -23,8 +23,7 @@ button {
 }
 
 button:hover {
-  border-color: #f47fff;
-  border-width: 4px;
+  outline: 4px solid #f47fff;
 }
 
 p {
