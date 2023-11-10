@@ -7,6 +7,10 @@ html, body {
   padding-bottom: 100px;
 }
 
+.whole_page {
+  margin-top: 40px;
+}
+
 button {
   margin: 5px;
   border-radius: 12px;
@@ -71,12 +75,23 @@ h1.templatecreate {
 }
 
 .hTitle {
-  text-align:left;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.hTitle > a {
   font-size: 30px;
-  top: 50%;
-  -ms-transform: translateY(50%);
-  transform: translateY(50%);
   font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.headerEle {
+  vertical-align:center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .title {
@@ -95,12 +110,16 @@ h1.templatecreate {
 
 header {
   top: 0;
-  width: 100%;
-  padding: 10px;
+  left: 0;
+  width: 100vw;
+  padding: 1em;
   background-color: #7289DA;
   overflow: hidden;
-  display: block;
+  display: grid;
   position: fixed;
+  grid-template-columns: 3fr 4em 4em 4em 4em 1fr 1em;
+  align-items:  1emcenter;
+  box-sizing: border-box;
 }
 
 #content {
@@ -120,14 +139,6 @@ footer{
   object-fit:cover;
 }
 
-
-.headerEle {
-  float: right;
-  top: 50%;
-  -ms-transform: translateY(-40%);
-  transform: translateY(-40%);
-  margin-right: 20px;
-}
 
 input {
   border: 0;
